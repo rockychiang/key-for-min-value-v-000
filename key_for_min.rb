@@ -7,6 +7,7 @@ def key_for_min_value(name_hash)
     if key[:none] == nil || no < key[:none]
       key[:low] = item
       key[:none] = no
+    end
   end
   key[:low]
 end
