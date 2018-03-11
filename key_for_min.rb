@@ -4,7 +4,7 @@
 def key_for_min_value(name_hash)
   key = {none: nil}
   name_hash.each do |item, no| 
-    key[low: item] if no < key[:none] || key[:none] == nil
+    key[low: item] if key[:none] == nil || no < key[:none] 
   end
   key[:low]
 end
